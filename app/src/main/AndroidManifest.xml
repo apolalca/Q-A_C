@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.iesnervion.qa">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Acces for API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+
+        <activity android:name=".ui.View.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.View.LoginActivity"
+            android:noHistory="true"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".ui.View.MenuActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="locked">
+            <item android:name="android:typeface">
+                serif
+            </item>
+        </activity>
+        <activity
+            android:name=".ui.View.CategoriesActivity"
+            android:label="@string/title_activity_game_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.View.GamingActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".ui.View.Finish_Game"
+            android:label="@string/title_activity_finish__game"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.View.FriendsActivity" />
+        <activity android:name=".ui.View.OneOrMultiplePlayers" />
+        <!-- activity android:name=".ui.View.Loadactivity"></activity -->
+    </application>
+
+</manifest>

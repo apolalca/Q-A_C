@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#448aff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#fff</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <!-- Colores de los botones pagina principal -->
+
+    <color name="colorGame">#558B2F</color>
+    <color name="colorSettings">#f9a825</color>
+    <color name="colorFirends">#1565c0</color>
+    <color name="colorQuestions">#c62828</color>
+    <color name="colorCircleLoading">#459</color>
+</resources>

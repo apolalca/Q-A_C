@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBackground"
+    tools:context="es.iesnervion.qa.ui.View.MenuActivity">
+
+        <TextView
+            style="@style/Buttonstyle"
+            android:id="@+id/txtJuego"
+            android:text="Jugar"
+            android:background="@drawable/shape_pregunta" />
+
+        <TextView
+            style="@style/Buttonstyle"
+            android:id="@+id/txtSettings"
+            android:layout_below="@id/txtJuego"
+            android:text="Ajustes"
+            android:background="@drawable/shape_ajuste" />
+
+        <TextView
+            android:id="@+id/txtAmigos"
+            android:layout_below="@id/txtSettings"
+            android:text="Amigos"
+            style="@style/Buttonstyle"
+            android:background="@drawable/shape_amigos" />
+
+        <TextView
+            android:id="@+id/txtRealizarPreguntas"
+            android:layout_below="@id/txtAmigos"
+            android:text="Mis Preguntas"
+            style="@style/Buttonstyle"
+            android:background="@drawable/shape_mispreguntas" />
+
+        <TextView
+            android:id="@+id/txtSalir"
+            android:layout_below="@id/txtRealizarPreguntas"
+            android:text="Salir"
+            style="@style/Buttonstyle"
+            android:background="@drawable/shape_mispreguntas" />
+</RelativeLayout>
